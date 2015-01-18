@@ -1,0 +1,22 @@
+#links {
+	float: right;
+	margin: 15px;	
+}
+h1 {
+	margin: 0;	
+}
+span {
+    color: blue;
+    text-decoration: underline;
+    margin: 10px;
+    cursor: pointer;
+}
+#text {
+	width: 49%;
+	float: left;
+	clear: both;	
+}
+#kittens {
+	width: 49%;
+	float: right;	
+}

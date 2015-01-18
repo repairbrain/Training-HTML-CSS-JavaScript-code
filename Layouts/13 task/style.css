@@ -1,0 +1,374 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('fonts/BebasNeue_Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeueBold';
+  src: url('fonts/BebasNeue_Bold.ttf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadPro";
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadPro";
+    src: url("/fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("/fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* working code */
+body {
+	min-width: 640px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #8c8c8c;
+	background: url('img/back.png');
+}
+
+a {
+	color: #d14343;
+}
+
+h1 {
+	font: 50px 'BebasNeue', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font: 40px 'BebasNeue', sans-serif;
+	color: #d14343;
+}
+
+wrapper.main {
+	padding: 0 11.9%;
+	position: relative;
+	display: inline-block;
+}
+
+/* Header */
+
+header {
+	margin: 38px 0;
+}
+
+header:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.logo, .logo a {
+	float: left;
+	text-decoration: none;
+	color: #8c8c8c;
+}
+
+.logo a p {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #d14343;
+	text-transform: uppercase;
+}
+
+.logo h1 {
+	border-bottom: 4px solid;
+	line-height: 44px;
+	padding: 0 3px;
+}
+
+nav.topMenu {
+	float: right;
+	margin-top: 25px;
+}
+
+nav.topMenu ul li, nav.topMenu ul li a {
+	text-transform: uppercase;
+	float: left;
+	font: 22px 'BebasNeue', sans-serif;
+	padding: 0 5px;
+	margin-left: 12px;
+	color: #8c8c8c;
+}
+
+nav.topMenu ul li:hover {
+	border-bottom: 2px solid;
+}
+
+/*Slider*/
+
+section.slider {
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+p.slider {
+	font: 58px "MyriadPro", sans-serif;
+	margin: 0 65px;
+	text-align: center;
+}
+
+p.headslider {
+	font-weight: bolder;
+}
+
+/*About Me & Skills*/
+
+.about-me {
+	width: 50%;
+	float: left;
+	margin-bottom: 88px;
+}
+
+.about-me h2, .skills h2, section.content h2, section.contact h2 {
+	padding-left: 10px;
+	border-bottom: 4px solid #dfdedc;
+	margin-bottom: 19px;
+}
+
+.about-me img {
+	margin-left: 10px;
+	margin-right: 21px;
+	width: 98px;
+	height: 94px;
+	background-color: white;
+	float: left;
+}
+
+.about-me p {
+	overflow: hidden;
+}
+
+.skills {
+	float: right;
+	width: 50%;
+}
+
+.skillsLeft {
+	float: left;
+	width: 55%;
+}
+
+.skillsLeft p, .skillsRight p {
+	font: 24px 'BebasNeue', sans-serif;
+	margin-left: 10px;
+}
+
+.skillsRight ul {
+	margin-right: 10px;
+}
+
+.skillsLeft li:before, .skillsRight li:before {
+	content: '●';
+	color: #d14343;
+	margin-right: 3px;
+	margin-left: 15px;
+}
+
+.skillsRight {
+	float: right;
+	width: 45%
+}
+
+section.responsibilities:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.inner-left {
+	margin-right: 2%;
+}
+
+.inner-right {
+	margin-left: 2%;
+}
+/*My Work*/
+
+section.content {
+	position: relative;
+}
+
+section.content:after {
+	margin-bottom: 50px;
+	content: '';
+	display: block;
+}
+
+nav.works {
+	position: absolute;
+	right: 0;
+	top: 22px;
+}
+
+nav.works ul li {
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+nav.works ul li a {
+	text-decoration: none;
+	color: #8c8c8c;
+}
+
+nav.works ul li a:hover {
+	color: #d14343;;
+}
+
+.project {
+	margin: 1% 1% 2% 1%;
+	display: inline-block;
+	width: 22.6%;
+}
+
+.project-image {
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 12px 3px rgba(50, 50, 50, 0.22);
+	-moz-box-shadow:    0px 2px 12px 3px rgba(50, 50, 50, 0.22);
+	box-shadow:         0px 2px 12px 3px rgba(50, 50, 50, 0.22);
+}
+
+.project-name {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.project a {
+	text-decoration: none;
+	color: #8c8c8c;
+}
+
+/*Contact*/
+
+section.contact:after {
+	clear: both;
+	display: block;
+	content: '';
+	border-bottom: 4px solid #dfdedc;
+}
+
+div.contact-left {
+	padding: 0 0 40px 10px;
+	width: 48.2%;
+	float: left;
+	position: relative;
+}
+
+p.contact-head {
+	font: 24px 'BebasNeue', sans-serif;
+	margin-bottom: 18px;
+}
+
+p.input-text {
+	margin-bottom: 3px;
+}
+
+.inputs-text-left {
+	width: 48%;
+	margin-right: 3%;
+	display: inline-block;
+}
+
+.inputs-text-right {
+	width: 48%;
+	display: inline-block;
+}
+
+input, textarea {
+	background-color: #e8e8e8;
+	border-top: 1px solid #bababa;
+	border-left: 1px solid #bababa;
+	border-right: 1px solid #f9f8f6;
+	border-bottom: 1px solid #f9f8f6;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #8c8c8c;
+}
+
+input.name {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+textarea {
+	width: 99%;
+	margin-bottom: 20px;
+	height: 105px;
+}
+
+input.submit {
+	font: 24px 'BebasNeue', sans-serif;
+	color: white;
+	padding: 3px 30px;
+	background: url('img/button-back.png');
+	border-top: 2px solid #e58c8c;
+	border-right: 1px solid #be6969;
+	border-bottom: 1px solid #9e4848;
+	border-left: 1px solid #bd5e5e;
+	cursor: pointer;
+}
+
+div.contact-right {
+	width: 49.2%;
+	float: right;
+	position: relative;
+}
+
+img.maps {
+	width: 47%;
+	float: left;
+	margin-right: 40px;
+}
+
+p.bold {
+	font-weight: bold;
+	line-height: 25px;
+}
+
+p.regular {
+	font-size: 11px;
+	line-height: 18px;
+}
+
+/*Footer*/
+
+footer {
+	margin-bottom: 72px;
+}
+
+footer p {
+	font-size: 11px;
+	margin: 10px;
+	float: left;
+}
+
+div.social {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+.social img {
+	margin-left: 10px;
+}

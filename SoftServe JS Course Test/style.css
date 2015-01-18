@@ -1,0 +1,86 @@
+html {
+	font-family: times new roman;
+	color: #5a5a5a;
+}
+
+#header {
+	background:url(img/head.png) repeat-x #C8C6C9;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.bigtext {
+	font-size: 20px;
+	color: #5a5a5a;
+}
+
+#head-text {
+	text-align: center;
+	padding-top: 35px;
+}
+
+form {
+	width: 50%;
+}
+
+legend {
+	border: 1px solid grey;
+	padding: 0px 10px;
+}
+
+input[type="text"], textarea {
+	margin-bottom: 5px;
+	background-color: #EFEAF0;
+	border: 1px solid grey;
+}
+
+input[type="text"] {
+	width: 300px;
+}
+
+input[type="text"]:focus, textarea:focus {
+	background-color: #F3FBFE;
+}
+
+textarea {
+	width: 100%;
+}
+
+#textpole {
+float: right;
+}
+
+#textpole2 {
+clear: both;
+float: right;
+}
+
+#textpole3 {
+margin-left: 12px;
+margin-top: 50px;
+}
+
+#add {
+	float: right;
+	border: 1px solid grey;
+	padding: 0px 8px;
+	margin: 0 -4px;
+}
+
+#add:hover {
+	background-color: #90DEFF;
+}
+
+.block {
+    display: inline-block;
+    width: 30%;
+	border: 2px solid #cfcfcf;
+	text-align: center;
+	font-size: 20px;
+	margin: 1%;
+}
+
+div p {
+    word-wrap: break-word;
+    padding: 5%;
+}
